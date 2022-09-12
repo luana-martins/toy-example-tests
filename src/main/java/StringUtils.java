@@ -27,7 +27,12 @@ public final class StringUtils {
       }
       retVal = sb.toString();
     }
+    callingMethod();
     return retVal;
+  }
+
+  public static void callingMethod(){
+
   }
 
 }
