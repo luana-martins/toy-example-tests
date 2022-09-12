@@ -12,7 +12,7 @@ public class StringUtilsTestUnit5 {
     Double actual = StringUtils.convertToDouble(age);
 
     assertNotNull(actual);
-    assertEquals(expAge, actual);
+    assertEquals(expAge, actual, "Conversão de idade");
   }
 
   @Test
