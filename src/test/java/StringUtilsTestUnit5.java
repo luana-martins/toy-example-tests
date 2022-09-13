@@ -14,7 +14,7 @@ public class StringUtilsTestUnit5 {
     assertNotNull(actual);
     assertEquals(expAge, actual, "Conversão de idade");
     testConvertToDoubleWithNullArgument();
-    assertNotNull(actual);
+    assertNotNull(actual, "not null");
   }
 
   @Test
