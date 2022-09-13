@@ -27,7 +27,7 @@ public final class MinhaStringUtils {
       }
       retVal = sb.toString();
     }
-    callingMethod();
+    MinhaStringUtils.callingMethod();
     return retVal;
   }
 
