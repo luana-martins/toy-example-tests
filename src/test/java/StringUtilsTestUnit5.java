@@ -9,7 +9,7 @@ public class StringUtilsTestUnit5 {
     // Test case with the age is a numeric string
     String age = "1990";
     Double expAge = Double.valueOf(age);
-    Double actual = StringUtils.convertToDouble(age);
+    Double actual = MinhaStringUtils.convertToDouble(age);
 
     assertNotNull(actual);
     assertEquals(expAge, actual, "Conversão de idade");
@@ -19,7 +19,7 @@ public class StringUtilsTestUnit5 {
   public void testConvertToDoubleWithNullArgument() {
     // Test case with the age is null
     String age = null;
-    Double actual = StringUtils.convertToDouble(age);
+    Double actual = MinhaStringUtils.convertToDouble(age);
 
     assertNull(actual, "The actual is not null");
   }
@@ -30,11 +30,11 @@ public class StringUtilsTestUnit5 {
     String age = "N/A";
 
     assertThrows(NumberFormatException.class, () -> {
-      StringUtils.convertToDouble(age);
+      MinhaStringUtils.convertToDouble(age);
     });
 
     assertThrows(NumberFormatException.class, () -> {
-      StringUtils.convertToDouble(age);
+      MinhaStringUtils.convertToDouble(age);
     });
   }
 
@@ -43,16 +43,16 @@ public class StringUtilsTestUnit5 {
     // Test the case that the input is NULL
     String input = null;
 
-    assertTrue(StringUtils.isNullOrBlank(input));
+    assertTrue(MinhaStringUtils.isNullOrBlank(input));
 
     // Test case with the input is empty
     input = " ";
-    assertFalse(!StringUtils.isNullOrBlank(input));
+    assertFalse(!MinhaStringUtils.isNullOrBlank(input));
 
     // Test case with the input is not empty
     input = "abc";
 
-    assertTrue(!StringUtils.isNullOrBlank(input));
+    assertTrue(!MinhaStringUtils.isNullOrBlank(input));
 
   }
 
@@ -62,18 +62,18 @@ public class StringUtilsTestUnit5 {
     String st = null;
     String defaultSt = "abc";
 
-    String actual = StringUtils.getDefaultIfNull(st, defaultSt);
+    String actual = MinhaStringUtils.getDefaultIfNull(st, defaultSt);
     assertSame(defaultSt, actual);
 
     // Test case with input string is not null
     st = "def";
 
-    actual = StringUtils.getDefaultIfNull(st, defaultSt);
+    actual = MinhaStringUtils.getDefaultIfNull(st, defaultSt);
     assertNotSame(defaultSt, actual);
 
     // Test case with input string is empty
     st = "";
-    actual = StringUtils.getDefaultIfNull(st, defaultSt);
+    actual = MinhaStringUtils.getDefaultIfNull(st, defaultSt);
     if (actual.equals(defaultSt)) {
       fail();
     }
@@ -86,7 +86,7 @@ public class StringUtilsTestUnit5 {
     String st2 = "World";
     String st3 = "!";
     String expect = st1 + st2 + st3;
-    String actual = StringUtils.concat(st1, st2, st3);
+    String actual = MinhaStringUtils.concat(st1, st2, st3);
     assertEquals(expect, actual);
   }
 
@@ -96,13 +96,13 @@ public class StringUtilsTestUnit5 {
     String st2 = "World";
     String st3 = null;
     String expect = st1 + st2;
-    String actual = StringUtils.concat(st1, st2, st3);
+    String actual = MinhaStringUtils.concat(st1, st2, st3);
     assertEquals(expect, actual);
   }
 
   @Test
   public void testConcatWithAllNullInput() {
-    String actual = StringUtils.concat();
+    String actual = MinhaStringUtils.concat();
     assertTrue(actual == null);
   }
 }

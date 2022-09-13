@@ -1,4 +1,4 @@
-public final class StringUtils {
+public final class MinhaStringUtils {
 
 
   public static Double convertToDouble(String str) {

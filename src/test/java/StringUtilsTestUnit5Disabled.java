@@ -12,7 +12,7 @@ public class StringUtilsTestUnit5Disabled {
     String st2 = "World";
     String st3 = "!";
     String expect = st1 + st2 + st3;
-    String actual = StringUtils.concat(st1, st2, st3);
+    String actual = MinhaStringUtils.concat(st1, st2, st3);
     assertEquals(expect, actual);
   }
 
@@ -23,13 +23,13 @@ public class StringUtilsTestUnit5Disabled {
     String st2 = "World";
     String st3 = null;
     String expect = st1 + st2;
-    String actual = StringUtils.concat(st1, st2, st3);
+    String actual = MinhaStringUtils.concat(st1, st2, st3);
     assertEquals(expect, actual);
   }
 
   @Test
   public void testConcatWithAllNullInput() {
-    String actual = StringUtils.concat();
+    String actual = MinhaStringUtils.concat();
     assertNull(actual);
   }
 }
