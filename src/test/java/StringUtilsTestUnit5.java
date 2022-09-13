@@ -13,12 +13,12 @@ public class StringUtilsTestUnit5 {
 
     assertNotNull(actual);
     assertEquals(expAge, actual, "Conversão de idade");
-    testConvertToDoubleWithNullArgument();
+    testConvertToDoubleWithNullArgument("luana");
     assertNotNull(actual, "not null");
   }
 
   @Test
-  public void testConvertToDoubleWithNullArgument() {
+  public void testConvertToDoubleWithNullArgument(String texto) {
     // Test case with the age is null
     String age = null;
     Double actual = MinhaStringUtils.convertToDouble(age);
