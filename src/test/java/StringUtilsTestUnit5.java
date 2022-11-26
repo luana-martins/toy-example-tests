@@ -30,12 +30,7 @@ public class StringUtilsTestUnit5 {
   @Test
   public void testConvertToDoubleWithNullArgument(String texto) {
     // Test case with the age is null
-    try{
-      String age = null;
-      Double actual = MinhaStringUtils.convertToDouble(age);
-    } catch{
-      // add try/catch
-    }
+    assertThrows(expected, actual);
   }
 
   @Test
