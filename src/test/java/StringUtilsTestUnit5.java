@@ -26,6 +26,18 @@ public class StringUtilsTestUnit5 {
     assertNull(actual, "The actual is not null");
   }
 
+
+  @Test
+  public void testConvertToDoubleWithNullArgument(String texto) {
+    // Test case with the age is null
+    try{
+      String age = null;
+      Double actual = MinhaStringUtils.convertToDouble(age);
+    } catch{
+      // add try/catch
+    }
+  }
+
   @Test
   public void testConvertToDoubleThrowException() {
     // Test with the age is a non numeric string
