@@ -106,7 +106,7 @@ public class StringUtilsTestUnit5 {
     String st3 = null;
     String expect = st1 + st2;
     String actual = MinhaStringUtils.concat(st1, st2, st3);
-    assertEquals(expect, actual);
+    assertNotEquals(expect, !actual);
   }
 
   @Test
