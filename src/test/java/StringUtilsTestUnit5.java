@@ -114,4 +114,13 @@ public class StringUtilsTestUnit5 {
     String actual = MinhaStringUtils.concat();
     assertEquals(actual, null);
   }
+
+  @Test
+  public void testBadConfiguration() throws Exception {
+    try {
+      //something
+    } catch (ResolveEndpointFailedException e) {
+      // ok
+    }
+  }
 }
