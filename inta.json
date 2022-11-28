@@ -1,0 +1,138 @@
+{
+"commits": [
+{
+	"repository": "git@github.com:luana-martins/toy-example-tests.git",
+	"sha1": "b0a54492e046a6b3e7ec18ec7429986e25560d79",
+	"url": "git@github.com:luana-martins/toy-example-tests/b0a54492e046a6b3e7ec18ec7429986e25560d79",
+	"refactorings": []
+},
+{
+	"repository": "git@github.com:luana-martins/toy-example-tests.git",
+	"sha1": "204292192b287aadde844a43507171bc373bf811",
+	"url": "git@github.com:luana-martins/toy-example-tests/204292192b287aadde844a43507171bc373bf811",
+	"refactorings": []
+},
+{
+	"repository": "git@github.com:luana-martins/toy-example-tests.git",
+	"sha1": "59e84693004abc447dced2ff17e2111ca3f9cb48",
+	"url": "git@github.com:luana-martins/toy-example-tests/59e84693004abc447dced2ff17e2111ca3f9cb48",
+	"refactorings": []
+},
+{
+	"repository": "git@github.com:luana-martins/toy-example-tests.git",
+	"sha1": "0958c1c195f3108527b2744670294217cf37b441",
+	"url": "git@github.com:luana-martins/toy-example-tests/0958c1c195f3108527b2744670294217cf37b441",
+	"refactorings": []
+},
+{
+	"repository": "git@github.com:luana-martins/toy-example-tests.git",
+	"sha1": "2c773569cb86d36dede51c61ac05aac50cf9e519",
+	"url": "git@github.com:luana-martins/toy-example-tests/2c773569cb86d36dede51c61ac05aac50cf9e519",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter texto : String in method public testConvertToDoubleWithNullArgument(texto String) : void from class StringUtilsTestUnit5",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/StringUtilsTestUnit5.java",
+		"startLine": 20,
+		"endLine": 27,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testConvertToDoubleWithNullArgument() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/StringUtilsTestUnit5.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 51,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "texto : String"
+}, {
+		"filePath": "src/test/java/StringUtilsTestUnit5.java",
+		"startLine": 20,
+		"endLine": 27,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public testConvertToDoubleWithNullArgument(texto String) : void"
+}]
+}
+]
+},
+{
+	"repository": "git@github.com:luana-martins/toy-example-tests.git",
+	"sha1": "b1448bb42e939c1f39562f1423db72a130123b85",
+	"url": "git@github.com:luana-martins/toy-example-tests/b1448bb42e939c1f39562f1423db72a130123b85",
+	"refactorings": []
+},
+{
+	"repository": "git@github.com:luana-martins/toy-example-tests.git",
+	"sha1": "bd15bdefe88a44cbe00e74e6c4212ec9d0eb64bc",
+	"url": "git@github.com:luana-martins/toy-example-tests/bd15bdefe88a44cbe00e74e6c4212ec9d0eb64bc",
+	"refactorings": []
+},
+{
+	"repository": "git@github.com:luana-martins/toy-example-tests.git",
+	"sha1": "70e4e65e53a3fa2a17439601e3cfc9d341faafd5",
+	"url": "git@github.com:luana-martins/toy-example-tests/70e4e65e53a3fa2a17439601e3cfc9d341faafd5",
+	"refactorings": []
+},
+{
+	"repository": "git@github.com:luana-martins/toy-example-tests.git",
+	"sha1": "f2cc78279403e7ce8b2b11da8006b1490a8585a7",
+	"url": "git@github.com:luana-martins/toy-example-tests/f2cc78279403e7ce8b2b11da8006b1490a8585a7",
+	"refactorings": []
+},
+{
+	"repository": "git@github.com:luana-martins/toy-example-tests.git",
+	"sha1": "77b08f2c9cf83a538c13b7546378204a1b855a6d",
+	"url": "git@github.com:luana-martins/toy-example-tests/77b08f2c9cf83a538c13b7546378204a1b855a6d",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class StringUtils renamed to MinhaStringUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/StringUtils.java",
+		"startLine": 1,
+		"endLine": 38,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "StringUtils"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/MinhaStringUtils.java",
+		"startLine": 1,
+		"endLine": 38,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "MinhaStringUtils"
+}]
+}
+]
+},
+{
+	"repository": "git@github.com:luana-martins/toy-example-tests.git",
+	"sha1": "e7a7fa8ae8ea39ba7c91e5892d739134354b94fc",
+	"url": "git@github.com:luana-martins/toy-example-tests/e7a7fa8ae8ea39ba7c91e5892d739134354b94fc",
+	"refactorings": []
+},
+{
+	"repository": "git@github.com:luana-martins/toy-example-tests.git",
+	"sha1": "4b06c073bb8fc90d3390c338ed86b63f10fa73e6",
+	"url": "git@github.com:luana-martins/toy-example-tests/4b06c073bb8fc90d3390c338ed86b63f10fa73e6",
+	"refactorings": []
+},
+{
+	"repository": "git@github.com:luana-martins/toy-example-tests.git",
+	"sha1": "f4fde9a98f2f6672f4079aaa7b4333e2e76014aa",
+	"url": "git@github.com:luana-martins/toy-example-tests/f4fde9a98f2f6672f4079aaa7b4333e2e76014aa",
+	"refactorings": []
+}]
+}
