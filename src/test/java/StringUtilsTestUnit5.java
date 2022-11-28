@@ -117,10 +117,7 @@ public class StringUtilsTestUnit5 {
 
   @Test
   public void testBadConfiguration() throws Exception {
-    try {
-      //something
-    } catch (ResolveEndpointFailedException e) {
-      // ok
-    }
+    assertThrows(ResolveEndpointFailedException.class, () -> template.sendBody(format, "Hello World"),
+           "Should have thrown a ResolveEndpointFailedException");
   }
 }
