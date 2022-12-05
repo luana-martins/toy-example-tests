@@ -52,16 +52,16 @@ public class StringUtilsTestUnit5 {
     // Test the case that the input is NULL
     String input = null;
 
-    assertTrue(MinhaStringUtils.isNullOrBlank(input));
+    assertTrue(MinhaStringUtils.isNullOrBlank(input), "xx");
 
     // Test case with the input is empty
     input = " ";
-    assertFalse(!MinhaStringUtils.isNullOrBlank(input));
+    assertFalse(!MinhaStringUtils.isNullOrBlank(input), "yy");
 
     // Test case with the input is not empty
     input = "abc";
 
-    assertTrue(!MinhaStringUtils.isNullOrBlank(input));
+    assertTrue(!MinhaStringUtils.isNullOrBlank(input), "zz");
 
   }
 
