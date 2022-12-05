@@ -113,6 +113,8 @@ public class StringUtilsTestUnit5 {
   public void testConcatWithAllNullInput() {
     String actual = MinhaStringUtils.concat();
     assertEquals(actual, null);
+    assertEquals(actual, null);
+    assertEquals(actual, null);
   }
 
   @Test
