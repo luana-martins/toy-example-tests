@@ -112,9 +112,9 @@ public class StringUtilsTestUnit5 {
   @Test
   public void testConcatWithAllNullInput() {
     String actual = MinhaStringUtils.concat();
-    assertEquals(actual, null);
-    assertEquals(actual, null);
-    assertEquals(actual, null);
+    assertEquals(actual, null, "test");
+    assertEquals(actual, null, "test");
+    assertEquals("test", actual, null);
   }
 
   @Test
